@@ -79,7 +79,7 @@ public class WholefileMapper  extends Mapper<NullWritable,Text,NullWritable,Text
 		filenamekey=new Text(path.toString());
 		multipleOutputs = new MultipleOutputs<NullWritable, Text>(context);
 		outputfilename = generateFileName(filenamekey,new Text(new SimpleDateFormat("YYYYMMdd_HHmmss_SSS").format(new Date()).toString() ));
-		stylesheet= new File("/home/jadeglobal/Projects/exportXMLCSV/src/main/resources/style.xsl");
+		stylesheet= new File("/home/jadeglobal/Projects/MRexportXMLCSV/src/main/resources/style.xsl");
 		//xmlSource = new File("path.toString()");
 	}
 	
